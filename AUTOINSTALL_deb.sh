@@ -13,6 +13,5 @@ apt-get update && apt-get -y install gcc \
           libpangoxft-1.0-0 docbook-to-man
 
 ./autobuild_deb.sh &&
-     ( dpkg -i ../openbox_${VERS}_$ARCH.deb ||
-         apt-get -y -f install ) &&
+     apt-get -y install ./../openbox_${VERS}_$ARCH.deb &&
      ln -s -f /usr/bin/openbox-session /etc/alternatives/x-window-manager
