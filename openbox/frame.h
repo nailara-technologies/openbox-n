@@ -218,6 +218,7 @@ void frame_adjust_area(ObFrame *self, gboolean moved,
 void frame_adjust_client_area(ObFrame *self);
 void frame_adjust_state(ObFrame *self);
 void frame_adjust_focus(ObFrame *self, gboolean hilite);
+void frame_round_corners(Window window);
 void frame_adjust_title(ObFrame *self);
 void frame_adjust_icon(ObFrame *self);
 void frame_grab_client(ObFrame *self);
